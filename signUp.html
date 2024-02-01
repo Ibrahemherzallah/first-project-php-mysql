@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="public/images/logo.png" type="image/x-icon">
+    <title>SignUp</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="public/auth.css" />
+  </head>
+  <body>
+    <div class="login_form_container">
+      <div class="login_form">
+        <h2>Sign Up</h2>
+        <form action="signUp.php" method="post" onsubmit="return validateForm()">
+            <div class="input_group">
+            <i class="fa fa-user"></i>
+            <input
+                type="text"
+                placeholder="firstName"
+                class="input_text"
+                autocomplete="off"
+                name="firstName"
+                required
+            />
+            </div>
+            <div class="input_group">
+                <i class="fa fa-user"></i>
+                <input
+                    type="text"
+                    placeholder="lastName"
+                    class="input_text"
+                    autocomplete="off"
+                    name="lastName"
+                    required
+                />
+                </div>
+                <div class="input_group">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                    </svg>
+                        <input
+                        id="email"
+                        type="text"
+                        placeholder="email"
+                        class="input_text"
+                        autocomplete="off"
+                        name="email"
+                        required
+                    />
+                    </div>
+                
+            <div class="input_group">
+            <i class="fa fa-unlock-alt"></i>
+            <input
+                id="password"
+                type="password"
+                placeholder="Student ID"
+                class="input_text"
+                autocomplete="off"
+                name="password"
+                required
+            />
+            </div>
+            <div class="button_group" id="login_button">
+            <a><button class="signUpBut" type="submit">Submit</button></a>
+            </div>
+        </form>
+        <div class="fotter">
+          <a>Forgot Password ?</a>
+          <a href="logIn.html">I have account</a>
+        </div>
+      </div>
+    </div>
+    <script>
+  function validateForm() {
+    let email = document.getElementById('email').value;
+    let password = document.getElementById('password').value;
+
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+        alert("Invalid email format. Please enter a valid email address.");
+        return false;
+    }
+
+    if (password.length < 8) {
+        alert("Password must be at least 8 characters long.");
+        return false; 
+    }
+    return true; 
+}
+
+</script>
+
+   </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="logIn.js"></script>
+  </body>
+</html>

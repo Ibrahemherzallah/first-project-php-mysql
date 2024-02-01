@@ -1,0 +1,353 @@
+/*/////////////////////// signUp page  /////////////////////////////*/
+.signUpPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signUpForm {
+    margin-bottom: 10%;
+    text-align: center;
+}
+.hr {
+    color: rgb(248, 1, 1);
+    opacity: 0.95;
+}
+.signUpInputs {
+    margin-top: 2%;
+    width: 300px;
+}
+.profileIcon {
+    height: 10%;
+    width: 10%;
+    color: rgb(244, 43, 43);
+    cursor:pointer;
+    opacity: 0.98;
+}
+.profileIcon:active {
+    opacity: 1;
+}
+/*//////////////////////////////  Home Page  ////////////////////////////*/
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+    #content {
+        display: none;
+    }
+}
+@media screen and (max-width: 900px) {
+    #girlImg {
+        display: none;
+    }
+    .familyImg {
+        display: none;
+    }
+}
+.storeName{
+    color: blue;
+}
+.navBarContent {
+    margin-left: 3%;
+}
+.navContent {
+    margin-right: 5%;
+}             
+.navButtonsDiv {
+    display: flex;
+    justify-content: center;
+    margin-left: 1%;
+}
+.c{
+    display:flex;
+}
+.ulNav {
+    margin-left: 5%;
+    width: 50%;
+}
+.aboutAsBut {
+    text-wrap:nowrap;
+}
+.navBar {
+    background-color: #fff !important;
+}
+.logoImg {
+    margin-right: 1%;
+    margin-top: 5px;
+    height: 30px;
+    width: 32px;
+}
+.navBut {
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 5%;
+    width: 160px;
+    height: 42px;
+}
+.loginBut {
+    border: 1px solid rgb(245, 241, 249) ;
+    color: blueviolet;
+    background-color: #fff;
+}
+.registerBut {
+    border: none;
+    color: #fff;
+    background: linear-gradient(#5159f0,#252cb5);
+    /* background-color: rgb(56, 56, 245); */
+}
+.registerBut:hover {
+    background-color: blue;
+}
+.loginBut:hover {
+    background-color: #f4f3f3;
+}
+.registerLink {
+    color: #fff;
+    text-decoration: none;
+}
+.ligInLink {
+    text-decoration: none;
+}
+
+/*////////    SecondPart    ////////*/
+.secondDiv {
+    background-color: rgb(246, 246, 246);
+    height: 500px;
+}
+.mainText {
+    text-wrap: nowrap;
+}
+.leftText {
+    padding-top: 5%;
+}
+.courseWordSpan {
+    color: rgb(67, 67, 238);
+}
+.letsWordParagraph {
+    color: rgb(83, 83, 246);
+}
+.beginsWordSpan {
+    font-weight: bold;
+    color: rgb(44, 44, 219);
+}
+.loremText {
+    opacity: 0.7;
+}
+.rightImg {
+    margin-top: 5%;
+    margin-left: 30%;
+}
+.bi-play-circle {
+    color: #fff;
+    border-radius: 50%;
+    background-color: rgb(219, 243, 6);
+    margin-bottom: 2px;
+}
+.playVideoBut {
+    background-color: rgb(246, 246, 246);
+    border: none;
+}
+.playVideoSpan {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    font-weight:bold;
+    margin-left: 5px;
+}
+/*////////    thirdPart    ///////*/
+.thirdDiv {
+    height: 100%;
+    margin-top: 3%;
+}
+.whatText {
+    font-size: small;
+    color:blueviolet;
+}
+.firstPageIcons {
+    color:#fff
+}
+.firstPageCards {
+    transition:  width 3s;
+    opacity: 0.9;
+    margin-left: 2%;
+    background: linear-gradient(#5159f0,#252cb5);
+}
+.firstPageCards:active {
+    opacity: 1;
+}
+.firstPageCards:hover {
+    width: 100px;
+    rotate: -0.5deg;
+    cursor: pointer;
+}
+.cardSubtitle {
+    font-weight: bold;
+    color: #fff !important;
+}
+.iconsLorem {
+    margin-top: 8%;
+    color: #fff;
+    font-size: small;
+    opacity: 0.7;
+}
+.cardsText {
+    margin-top: 5%;
+}
+.mainTextThirdDiv {
+    font-weight: bold;
+    text-wrap: nowrap;
+}
+/*///////////// SecondPage ///////////////*/
+/*//// FirstPart  ////*/
+.frirsPartSecondPage {
+    margin-top: 10%;
+    height:500px;
+    background: linear-gradient(#5159f0,#252cb5);
+}
+.familyImg {
+    border: none;
+    height: 500px;
+    width: 500px;
+}
+.firstPartRightText {
+    margin-top: 8%;
+    width: 100%;
+    margin-left: 20%;
+}
+.selectedCourseText {
+    color:#F0C932
+}
+.peopleTakingCoursesText {
+    font-weight: bold;
+    color: #fff;
+}
+.secondPageLorem {
+    opacity: 0.7;
+    color: #fff;
+}
+.peopleNumSpan {
+    margin-left: 25%;
+}
+.NumSpans {
+    color: #F0C932;
+    font-weight: bold;
+}
+.NumP {
+    color:aqua;
+    margin-left: 15%;
+}
+.peopleNumP {
+    color:aqua;
+}
+.userNumSpan {
+    margin-left: -5px;
+}
+.courseNumSpan {
+    margin-left: 5px;
+}
+/*///// SecondPart /////*/
+.secondPartSecondPage {
+     margin-top: 1%;
+}
+.rightTextSecondPage {
+    width: 500px !important;
+    margin-top: 3%;
+    cursor: pointer;
+} 
+.secondPageCards {
+    transition:  width 3s;
+    opacity: 0.9;
+    margin-left: 2%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.secondPageCards:active {
+    opacity: 1;
+}
+.secondPageCards:hover {
+    width: 100px;
+    rotate: -0.5deg;
+    cursor: pointer;
+}
+.sP {
+    color: #4951e2;
+}
+.sSP{
+    color: aqua;
+}
+.testWord {
+    margin-left: 45%;
+}
+.lastCards {
+    display: flex;
+    justify-content: center;
+}
+.testCards {
+    width: 600px;
+    margin-left: 2%;
+}
+.leftWomen {
+    margin-top: 3%;
+    margin-left: 2%;
+    height: 50px;
+    width: 50px;
+}
+.rightWomen {
+    margin-top: 3%;
+    margin-left: 2%;
+    height: 50px;
+    width: 50px;
+}
+.clientParaghraph {
+    opacity: 0.7;
+}
+.lastElement {
+    margin-top: 3%;
+    height: 350px;
+    background-color: black;
+}
+.lastElementContent {
+    padding-top: 5%;
+}
+.lastLogoImg {
+    height: 35px;
+    width: 35px;
+}
+.lastStoreName {
+    color: #fff;
+}
+.socialCommunicationLogos {
+    color: #fff;
+    margin-left: 1%;
+    width: 20px;
+    height: 20px;
+}
+.lastElementContents {
+    margin-left: 5%;
+    margin-top: 2%;
+    color: #fff;
+    font-weight: bold;
+}
+.lastElementEmail {
+    opacity: 0.7;
+}
+.lastElementContentsLinks {
+    color: #fff;
+    text-wrap: nowrap;
+    margin-left: 5%;
+    text-decoration: none;
+    opacity: 0.7;
+}
+/*//////////////  Profile Page  ////////////////////////*/
+.navIconAndNameDiv {
+    display: flex;
+    width: 50%;
+}
+.bi-person-circle {
+    margin-left: 10%;
+}
+#registerCoursesBut {
+    text-wrap: nowrap;
+    width: 50%;
+    margin-left: 5%;
+}
+.logOut {
+    color: rgb(246, 92, 92);
+    margin-top: 2%;
+    text-decoration: none;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="public/images/logo.png" type="image/x-icon">
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="public/auth.css" />
+  </head>
+  <body>
+    <div class="login_form_container">
+      <div class="login_form">
+        <h2>Login</h2>
+        <form action="logIn.php" method="post">
+            <div class="input_group">
+            <i class="fa fa-user"></i>
+            <input
+                type="text"
+                placeholder="Username"
+                class="input_text"
+                autocomplete="off"
+                name="userName"
+                required
+            />
+            </div>
+            <div class="input_group">
+            <i class="fa fa-unlock-alt"></i>
+            <input
+                id="passwordButton"
+                type="password"
+                placeholder="Password"
+                class="input_text"
+                autocomplete="off"
+                name="password"
+                required
+            />
+            </div>
+            <div class="button_group" id="login_button">
+              <a><button id="logInButSubmit" class="signUpBut" type="submit">Submit</button></a>
+            </div>
+        </form>
+        <div class="fotter">
+          <a>Forgot Password ?</a>
+          <a href="signUp.html">SingUp</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="logIn.js"></script>
+  </body>
+</html>
